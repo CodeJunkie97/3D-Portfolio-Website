@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Navbar from "./components/Navbar,";
+import Contact from "./components/Contact";
 
 function App() {
 const Container = styled.div`
@@ -20,6 +21,7 @@ const Container = styled.div`
       <div>
         <Container>
         <Navbar />
+        <Contact />
         </Container>
       </div>
     )
