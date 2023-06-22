@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
+import Works from "./components/Works";
 
 function App() {
 const Container = styled.div`
@@ -22,6 +23,7 @@ const Container = styled.div`
       <div>
         <Container>
         <Hero />
+        <Works />
         <Contact />
         </Container>
       </div>

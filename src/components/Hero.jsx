@@ -5,11 +5,16 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Section = styled.div`
-  height: 100vh;
-  scroll-snap-align: center;
-  display: flex;
-  flex-direction: column;
+height: 100vh;
+scroll-snap-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-between;
 
+@media only screen and (max-width: 768px) {
+  height: 200vh;
+}
 `;
 
 const Container = styled.div`
