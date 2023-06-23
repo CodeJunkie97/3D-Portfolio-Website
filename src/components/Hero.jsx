@@ -133,7 +133,7 @@ const Hero = () => {
           <Subtitle>What I Do</Subtitle>
         </WhatWeDo>
         <Desc>
-          Build App's and Software the Changes the World
+          Build App's and Software that Changes the World
         </Desc>
         <Button>Learn More</Button>
       </Left>
