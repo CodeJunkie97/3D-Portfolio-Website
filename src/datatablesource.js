@@ -1,25 +1,19 @@
 export const projectColumns = [
-    { field: "id", headerName: "ID", width: 70 },
+    { field: "id",headerName: "ID", width: 70},
     {
         field: "pname",
         headerName: "Project Name",
-        width: 230,
+        width: 350,
     },
-    {
-        field: "desc",
-        headerName: "Project Description",
-        width: 230,
-    },
-
     {
         field: "languages",
         headerName: "Languages",
-        width: 230,
+        width: 350,
     },
     {
         field: "tech",
         headerName: "Technologies/Tools",
-        width: 230,
+        width: 550,
     }
 ];
 
@@ -28,16 +22,16 @@ export const softwareRows = [
     {
         id:"1",
         pname: "Flix Movie Streaming Application",
-        desc: "Full Stack Application I developed that is a netflix type streaming website with equal functionality",
+        desc: "https://github.com/CodeJunkie97/Flix-Movie-Streaming-Back-End/blob/main/README.md",
         languages: "React, Node, Express, SASS CSS",
         tech: "React-Icons, VS Code",
-        github:"Link",
+        github:"https://github.com/CodeJunkie97/Flix-Movie-Streaming-Back-End",
         video:"Link"
     },
     {
         id:"2",
         pname: "Personal Website",
-        desc: "Full Stack Application I developed as a 3D Portfolio for all of my Personal Projects",
+        desc: "https://github.com/CodeJunkie97/Flix-Movie-Streaming-Back-End/blob/main/README.md",
         languages: "React, ThreeJS",
         tech: "React-Icons, 3D Objects, Simple-React-Maps",
         github:"Link",

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from "react-router-dom";
 
 const Section = styled.div`
   display: flex;
@@ -75,10 +76,18 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/logo.png" />
           <List>
+            <Link to="/" style={{ textDecoration: "none" }}>
             <ListItem>Home</ListItem>
+            </Link>
+            <Link to="/devprojects" style={{ textDecoration: "none" }}>
             <ListItem>Software Development Projects</ListItem>
+            </Link>
+            <Link to="/dataprojects" style={{ textDecoration: "none" }}>
             <ListItem>Data Science Projects</ListItem>
+            </Link>
+            <Link to="/contact" style={{ textDecoration: "none" }}>
             <ListItem>Contact</ListItem>
+            </Link>
           </List>
         </Links>
         <Icons>

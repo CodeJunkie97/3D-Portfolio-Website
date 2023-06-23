@@ -3,7 +3,8 @@ import { projectColumns, softwareRows, dataRows } from "../../datatablesource";
 import { useState } from "react";
 import styled from "styled-components";
 import Navbar from "../Navbar";
-
+import {Link} from "react-router-dom";
+import "./list.scss"
 const Container = styled.div`
 height: 100vh;
 scroll-snap-type: y mandatory;
@@ -21,6 +22,36 @@ const Box = styled.div`
 margin-top: 70px;
 height: 600px;
 `;
+
+const actionColumns = [
+    {
+      field: "action",
+      headerName: "Links",
+      width: 600,
+      renderCell: (params) => {
+        return (
+          <div className="cellAction">
+            <Link to={params.row.desc} style={{ textDecoration: "none" }}>
+              <div className="deleteButton"> Description Link</div>
+            </Link>
+            <div>
+            <Link to={params.row.github} style={{ textDecoration: "none" }}>
+              <div className="viewButton"> Github Link</div>
+            </Link>
+            </div>
+            <div>
+            <Link to={params.row.video} style={{ textDecoration: "none" }}>
+              <div className="vidButton"> Video Demonstration Link</div>
+            </Link>
+            </div>
+          </div>
+          
+
+
+        );
+      },
+    }
+  ];
 const List = (input) => {
     const [data, setData] = useState(()=> {
         if(input.name == "dev"){
@@ -29,17 +60,29 @@ const List = (input) => {
             return dataRows;
         }
     });
+
+    const handleClick = () => {
+        if(input.name == "dev"){
+            setData(dataRows);
+        }else if(input.name == "data"){
+            setData(softwareRows);
+        }
+    }
   return (
     <Container>
-        <Navbar />
+        <div onClick = {handleClick}>
+        <Navbar/>
+        </div>
         <Box>
         <DataGrid
-        sx = {{color:"white"}}
+          columnVisibilityModel={{
+           id: false
+          }}
+        sx = {{color:"white", fontSize:18, fontWeight:"bold"}}
         className="datagrid"
         rows={data}
-        columns={projectColumns}
-        pageSize={5}
-        checkboxSelection
+        rowHeight={150}
+        columns={projectColumns.concat(actionColumns)}
         />
         </Box>
     </Container>
