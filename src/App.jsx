@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Works from "./components/Works";
 import {
-  HashRouter as Router,
+  HashRouter,
   Routes,
   Route,
   Navigate
@@ -15,14 +15,14 @@ import SingleContact from "./components/SingleContact";
 
 function App() {
     return (
-        <Router>
+        <HashRouter basename = "/">
           <Routes>
             <Route exact path = "/" element = {<Home />} />
             <Route path = "/devprojects" element = {<Project type="dev"/>} />
             <Route path = "/dataprojects" element = {<Project type="data"/>} />
             <Route path = "/contact" element = {<SingleContact />} />
           </Routes>
-        </Router>
+        </HashRouter>
     )
   }
   
