@@ -4,7 +4,7 @@ import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Works from "./components/Works";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate
