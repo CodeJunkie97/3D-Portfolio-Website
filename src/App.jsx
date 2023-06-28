@@ -15,7 +15,7 @@ import SingleContact from "./components/SingleContact";
 
 function App() {
     return (
-        <HashRouter basename = "/">
+        <HashRouter>
           <Routes>
             <Route exact path = "/" element = {<Home />} />
             <Route path = "/devprojects" element = {<Project type="dev"/>} />

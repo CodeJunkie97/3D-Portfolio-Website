@@ -6297,4 +6297,4 @@ background: url("./img/bg.jpeg");
 &::-webkit-scrollbar{
   display: none;
 }
-`,bFe=()=>ot(wFe,{children:[X(K2,{}),X(E9,{})]});function CFe(){return X(sZ,{basename:"/",children:ot(tZ,{children:[X(Og,{exact:!0,path:"/",element:X(f0e,{})}),X(Og,{path:"/devprojects",element:X(gH,{type:"dev"})}),X(Og,{path:"/dataprojects",element:X(gH,{type:"data"})}),X(Og,{path:"/contact",element:X(bFe,{})})]})})}NA.createRoot(document.getElementById("root")).render(X(mn.StrictMode,{children:X(CFe,{})}));
+`,bFe=()=>ot(wFe,{children:[X(K2,{}),X(E9,{})]});function CFe(){return X(sZ,{children:ot(tZ,{children:[X(Og,{exact:!0,path:"/",element:X(f0e,{})}),X(Og,{path:"/devprojects",element:X(gH,{type:"dev"})}),X(Og,{path:"/dataprojects",element:X(gH,{type:"data"})}),X(Og,{path:"/contact",element:X(bFe,{})})]})})}NA.createRoot(document.getElementById("root")).render(X(mn.StrictMode,{children:X(CFe,{})}));
