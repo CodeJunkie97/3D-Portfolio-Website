@@ -1,6 +1,4 @@
-import React, {Suspense} from "react";
-import { OrbitControls, Stage } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import React from "react";
 import styled from "styled-components";
 
 const Desc = styled.div`
@@ -22,17 +20,16 @@ const Desc = styled.div`
   }
 `;
 
+const Img = styled.img`
+padding-top: 200px;
+padding-left: 100px;
+width: 500px;
+`
+
 const Data = () => {
   return (
     <>
-      <Canvas>
-        <Suspense fallback={null}>
-          <Stage environment="city" intensity={0.6}>
-            
-          </Stage>
-          <OrbitControls enableZoom={false} autoRotate />
-        </Suspense>
-      </Canvas>
+      <Img src = "./img/graph.jpeg" />
       <Desc>
         I have extensive experience also working on Data Applications
       </Desc>
