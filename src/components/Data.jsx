@@ -8,7 +8,7 @@ const Desc = styled.div`
   background-color: white;
   border-radius: 10px;
   position: absolute;
-  bottom: 200px;
+  top:200px;
   right: 100px;
 
   @media only screen and (max-width: 768px) {
@@ -21,9 +21,10 @@ const Desc = styled.div`
 `;
 
 const Img = styled.img`
-padding-top: 200px;
+padding-top: 300px;
 padding-left: 100px;
-width: 500px;
+width: 450px;
+height: 350px;
 `
 
 const Data = () => {

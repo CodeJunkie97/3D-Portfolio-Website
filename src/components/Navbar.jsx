@@ -91,8 +91,11 @@ const Navbar = () => {
           </List>
         </Links>
         <Icons>
-          <Icon src="./img/search.png" />
+          
+         {/* <Icon src="./img/search.png" /> */}
+         <Link to="/contact" style = {{ textDecoration: "none"}}>
           <Button>Hire Now</Button>
+          </Link>
         </Icons>
       </Container>
     </Section>

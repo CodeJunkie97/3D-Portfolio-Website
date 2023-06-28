@@ -41,7 +41,7 @@ const actionColumns = [
             </div>
             <div>
             <Link to={params.row.video} style={{ textDecoration: "none" }}>
-              <div className="vidButton"> Video Demonstration Link</div>
+              <div className="vidButton"> Video Demonstration Link(Coming Soon)</div>
             </Link>
             </div>
           </div>
