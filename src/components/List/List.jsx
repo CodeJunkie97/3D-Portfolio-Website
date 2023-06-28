@@ -39,11 +39,13 @@ const actionColumns = [
               <div className="viewButton"> Github Link</div>
             </Link>
             </div>
+            {/*
             <div>
             <Link to={params.row.video} style={{ textDecoration: "none" }}>
               <div className="vidButton"> Video Demonstration Link(Coming Soon)</div>
             </Link>
             </div>
+          */}
           </div>
           
 
