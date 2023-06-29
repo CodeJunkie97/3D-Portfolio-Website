@@ -3,17 +3,17 @@ export const projectColumns = [
     {
         field: "pname",
         headerName: "Project Name",
-        width: 350,
+        width: 250,
     },
     {
         field: "languages",
         headerName: "Languages/",
-        width: 350,
+        width: 250,
     },
     {
         field: "tech",
         headerName: "Technologies/Tools",
-        width: 550,
+        width: 400,
     }
 ];
 

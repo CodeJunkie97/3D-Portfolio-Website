@@ -19,6 +19,7 @@ background: url("./img/bg.jpeg");
 `;
 
 const Box = styled.div`
+
 margin-top: 70px;
 height: 600px;
 `;
@@ -27,7 +28,7 @@ const actionColumns = [
     {
       field: "action",
       headerName: "Links",
-      width: 600,
+      width: 300,
       renderCell: (params) => {
         return (
           <div className="cellAction">
@@ -80,7 +81,7 @@ const List = (input) => {
           columnVisibilityModel={{
            id: false
           }}
-        sx = {{color:"white", fontSize:18, fontWeight:"bold"}}
+        sx = {{color:"white", fontSize:16, fontWeight:"bold"}}
         className="datagrid"
         rows={data}
         rowHeight={150}
