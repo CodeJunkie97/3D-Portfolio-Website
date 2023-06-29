@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 const Section = styled.div`
   display: flex;
   justify-content: center;
+  
 
   @media only screen and (max-width: 768px) {
     width: 100%;

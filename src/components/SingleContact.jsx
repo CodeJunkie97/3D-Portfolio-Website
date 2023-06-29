@@ -13,10 +13,17 @@ background: url("./img/bg.jpeg");
   display: none;
 }
 `;
+
+const NavBox = styled.div`
+position:sticky;
+top:0;
+`
 const SingleContact = () => {
   return (
     <Container>
+      <NavBox>
         <Navbar />
+      </NavBox>
         <Contact />
     </Container>
   )

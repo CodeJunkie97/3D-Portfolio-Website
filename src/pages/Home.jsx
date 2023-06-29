@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Hero from "../components/Hero";
 import Works from "../components/Works";
 import Contact from "../components/Contact";
+import Navbar from "../components/Navbar";
 
 
 const Home = () => {
@@ -17,9 +18,17 @@ const Home = () => {
       display: none;
     }
   `;
+
+  const NavBox = styled.div`
+    position:sticky;
+    top:0;
+  `
   return (
     <div>
         <Container>
+          <NavBox>
+            <Navbar />
+          </NavBox>
             <Hero />
             <Works />
             <Contact />

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
+import {Link} from "react-router-dom";
 
 const Section = styled.div`
 height: 100vh;
@@ -38,6 +39,7 @@ const Left = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  margin-left: 100px;
 
   @media only screen and (max-width: 768px) {
     flex: 1;
@@ -76,8 +78,30 @@ const Desc = styled.p`
   }
 `;
 
-const Button = styled.button`
-  background-color: #da4ea2;
+const GithubButton = styled.button`
+  background-color: green;
+  color: white;
+  font-weight: 500;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
+const ResumeButton = styled.button`
+  background-color: red;
+  color: white;
+  font-weight: 500;
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+`;
+
+const LinkedinButton = styled.button`
+  background-color: blue;
   color: white;
   font-weight: 500;
   width: 100px;
@@ -95,6 +119,11 @@ const Right = styled.div`
     width: 100%;
   }
 `;
+
+const ButtonSection = styled.div`
+display: flex;
+flex-direction: row;
+`
 
 const Img = styled.img`
   width: 800px;
@@ -124,7 +153,7 @@ const Img = styled.img`
 const Hero = () => {
   return (
     <Section>
-    <Navbar />
+
     <Container>
       <Left>
         <Title>Programmer. Thinker. Builder.</Title>
@@ -135,7 +164,15 @@ const Hero = () => {
         <Desc>
           Build App's and Software that Changes the World
         </Desc>
-        <Button>Learn More</Button>
+        <ButtonSection>
+        <Link to="https://github.com/CodeJunkie97" style={{ textDecoration: "none" }}>
+        <GithubButton>Github</GithubButton>
+        </Link>
+        <ResumeButton>Resume</ResumeButton>
+        <Link to="https://www.linkedin.com/in/ian-manners-469b84163" style={{ textDecoration: "none" }}>
+        <LinkedinButton>LinkedIn</LinkedinButton>
+        </Link>
+        </ButtonSection>
       </Left>
       <Right>
         <Img src="./img/moon.png" />
