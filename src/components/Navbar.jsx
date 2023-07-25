@@ -1,6 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import {useState} from "react";
 
 const Section = styled.div`
   display: flex;
@@ -70,7 +70,8 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Navbar = () => {
+
+const Navbar = ({handleClick}) => {
   return (
     <Section>
       <Container>
@@ -80,11 +81,11 @@ const Navbar = () => {
             <Link to="/" style={{ textDecoration: "none" }}>
             <ListItem>Home</ListItem>
             </Link>
-            <Link to="/devprojects" style={{ textDecoration: "none" }}>
-            <ListItem>Software Development Projects</ListItem>
+            <Link to="/devprojects"  style={{ textDecoration: "none" }}>
+            <ListItem onClick={()=>{handleClick("dev")}}>Software Development Projects</ListItem>
             </Link>
-            <Link to="/dataprojects" style={{ textDecoration: "none" }}>
-            <ListItem>Data Science Projects</ListItem>
+            <Link to = "/dataprojects" style={{ textDecoration: "none" }}>
+            <ListItem onClick={()=>{handleClick("data")}}>Data Science Projects</ListItem>
             </Link>
             <Link to="/contact" style={{ textDecoration: "none" }}>
             <ListItem>Contact</ListItem>

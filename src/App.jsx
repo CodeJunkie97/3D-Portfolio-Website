@@ -12,14 +12,16 @@ import {
 import Home from "./pages/Home";
 import Project from "./pages/Project";
 import SingleContact from "./components/SingleContact";
+import List from "./components/List/List"
+import {useState} from "react";
 
 function App() {
     return (
         <HashRouter>
           <Routes>
             <Route exact path = "/" element = {<Home />} />
-            <Route path = "/devprojects" element = {<Project type="dev"/>} />
-            <Route path = "/dataprojects" element = {<Project type="data"/>} />
+            <Route path = "/devprojects" element = {<List state={"dev"}/>} />
+            <Route path = "/dataprojects" element = {<List state={"data"}/>} />
             <Route path = "/contact" element = {<SingleContact />} />
           </Routes>
         </HashRouter>

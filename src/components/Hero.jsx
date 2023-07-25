@@ -112,6 +112,7 @@ const LinkedinButton = styled.button`
 `;
 
 const Right = styled.div`
+  top: 40px;
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {

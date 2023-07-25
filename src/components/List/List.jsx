@@ -56,25 +56,26 @@ const actionColumns = [
     }
   ];
 const List = (input) => {
-    const [data, setData] = useState(()=> {
-        if(input.name == "dev"){
-            return softwareRows;
-        }else if(input.name == "data"){
-            return dataRows;
-        }
-    });
-
-    const handleClick = () => {
-        if(input.name == "dev"){
-            setData(dataRows);
-        }else if(input.name == "data"){
-            setData(softwareRows);
-        }
+  const [data, setData] = useState(()=> {
+    if(input.state == "dev"){
+        return softwareRows;
+    }else if(input.state == "data"){
+        return dataRows;
     }
+});
+
+    const handleClick = (type) =>{
+      if(type == "dev"){
+        setData(softwareRows);
+      }else if(type=="data"){
+        setData(dataRows);
+      }
+    }
+
   return (
     <Container>
-        <div onClick = {handleClick}>
-        <Navbar/>
+        <div >
+        <Navbar handleClick = {handleClick}/>
         </div>
         <Box>
         <DataGrid
