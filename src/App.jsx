@@ -13,13 +13,14 @@ import Home from "./pages/Home";
 import Project from "./pages/Project";
 import SingleContact from "./components/SingleContact";
 import List from "./components/List/List"
-import {useState} from "react";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
     return (
         <HashRouter>
           <Routes>
             <Route exact path = "/" element = {<Home />} />
+            <Route path = "/aboutme" element = {<AboutMe />} />
             <Route path = "/devprojects" element = {<List state={"dev"}/>} />
             <Route path = "/dataprojects" element = {<List state={"data"}/>} />
             <Route path = "/contact" element = {<SingleContact />} />
