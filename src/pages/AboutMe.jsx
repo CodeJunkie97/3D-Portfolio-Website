@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const AboutMe = () => {
 const Section = styled.div`
-scroll-snap-align: center;
+
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -16,7 +16,7 @@ justify-content: space-between;
 
 const Container = styled.div`
   height: 100%;
-  scroll-snap-align: center;
+
   width: 1400px;
   display: flex;
   justify-content: space-between;
@@ -30,8 +30,7 @@ const Container = styled.div`
 `;
 
 const OuterContainer = styled.div`
-scroll-snap-type: y mandatory;
-scroll-behavior: smooth;
+
 overflow-y: auto;
 scrollbar-width: none;
 color: white;
@@ -79,7 +78,7 @@ const Text = styled.p`
 `;
 
 const Right = styled.div`
-  top: 40px;
+  top: 300px;
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {
@@ -112,6 +111,8 @@ const Img = styled.img`
 `;
 const Navbox = styled.div`
 background: url("./img/bg.jpeg");
+position:sticky;
+top:0;
 `;
   return (
     <div>

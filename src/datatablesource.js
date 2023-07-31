@@ -30,6 +30,15 @@ export const softwareRows = [
     },
     {
         id:"2",
+        pname: "Travelago Travel/Booking Application",
+        desc: "https://github.com/CodeJunkie97/Travelago/blob/main/README.md",
+        languages: "React, Node, Conext, useFetch",
+        tech: "Rest API's, MongoDB, Java Web Token Authentication",
+        github:"https://github.com/CodeJunkie97/Travelago",
+        video:"Link"
+    },
+    {
+        id:"3",
         pname: "Personal Website",
         desc: "https://github.com/CodeJunkie97/3D-Portfolio-Website/blob/main/README.md",
         languages: "React, ThreeJS",
