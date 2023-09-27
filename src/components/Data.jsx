@@ -21,7 +21,7 @@ const Desc = styled.div`
 `;
 
 const Img = styled.img`
-padding-top: 300px;
+padding-top: 100px;
 padding-left: 100px;
 width: 450px;
 height: 350px;

@@ -81,9 +81,6 @@ const Navbar = ({handleClick}) => {
             <Link to="/" style={{ textDecoration: "none" }}>
             <ListItem>Home</ListItem>
             </Link>
-            <Link to="/aboutme" style={{ textDecoration: "none" }}>
-              <ListItem>About Me</ListItem>
-            </Link>
             <Link to="/devprojects"  style={{ textDecoration: "none" }}>
             <ListItem onClick={()=>{handleClick("dev")}}>Software Development Projects</ListItem>
             </Link>

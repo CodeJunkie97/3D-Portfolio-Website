@@ -20,7 +20,6 @@ function App() {
         <HashRouter>
           <Routes>
             <Route exact path = "/" element = {<Home />} />
-            <Route path = "/aboutme" element = {<AboutMe />} />
             <Route path = "/devprojects" element = {<List state={"dev"}/>} />
             <Route path = "/dataprojects" element = {<List state={"data"}/>} />
             <Route path = "/contact" element = {<SingleContact />} />

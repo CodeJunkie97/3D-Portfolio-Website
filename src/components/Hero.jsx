@@ -169,7 +169,9 @@ const Hero = () => {
         <Link to="https://github.com/CodeJunkie97" style={{ textDecoration: "none" }}>
         <GithubButton>Github</GithubButton>
         </Link>
+        <Link to ="https://drive.google.com/file/d/1xVhAC8FEVtqyxSEVKzs1TxJCsEG-Hked/view">
         <ResumeButton>Resume</ResumeButton>
+        </Link>
         <Link to="https://www.linkedin.com/in/ian-manners-469b84163" style={{ textDecoration: "none" }}>
         <LinkedinButton>LinkedIn</LinkedinButton>
         </Link>
